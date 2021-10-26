@@ -16,6 +16,8 @@ import Kingfisher
 class ViewController: UIViewController {
 
     let locationManager = CLLocationManager()
+    
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var currentTempLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
 //    @IBOutlet weak var mapView: MKMapView!
@@ -98,6 +100,11 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 15)
         label.textAlignment = .center
         label.layer.masksToBounds = true
+        
+        dateLabel.text = "10월 26일"
+        dateLabel.font = UIFont.systemFont(ofSize: 14)
+        
+        locationLabel.font = UIFont.systemFont(ofSize: 20)
         
         happyLabel.text = " 오늘도 행복한 하루 보내세요  "
     }
@@ -240,3 +247,4 @@ extension ViewController: MKMapViewDelegate {
 
 //맵뷰가 없는 상태에서는 위치권한 설정을 활성화 시킬 수 없나?
 //커스텀위치의 좌표를 받아서 구체적인 지명을 넣어주려 했으나 실패.
+//날짜와 시간정보는 서버통신할 필요없이 값을 내부적으로 받아올 수 있을꺼 같은데 추후 확인 필요.

@@ -29,6 +29,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         labelSetting(label: currentTempLabel)
         labelSetting(label: windSpeedLabel)
         labelSetting(label: humidityLabel)
@@ -125,6 +127,7 @@ class ViewController: UIViewController {
     func renewBarButtonSetting() {
         
         let renewBarButton = UIBarButtonItem(title: "갱신", style: .plain, target: self, action: #selector(renewButtonAction))
+        renewBarButton.tintColor = .black
         navigationItem.rightBarButtonItem = renewBarButton
         
     }

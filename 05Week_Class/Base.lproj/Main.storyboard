@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lh6-bv-1N4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aMu-MS-8ju">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="배경" translatesAutoresizingMaskIntoConstraints="NO" id="yUz-j0-gYp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="습도 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToZ-9o-PAY">
                                 <rect key="frame" x="47" y="235" width="63.5" height="44"/>
                                 <constraints>
@@ -92,17 +95,21 @@
                         <constraints>
                             <constraint firstItem="NAt-ow-qru" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="02M-JJ-T1C"/>
                             <constraint firstItem="rRe-lE-yAS" firstAttribute="top" secondItem="HxF-py-LX4" secondAttribute="bottom" id="5br-2r-Ogm"/>
+                            <constraint firstItem="yUz-j0-gYp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Db-nU-EXH"/>
                             <constraint firstItem="hS0-ge-yRp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="7yC-q5-FEO"/>
                             <constraint firstItem="hS0-ge-yRp" firstAttribute="top" secondItem="rRe-lE-yAS" secondAttribute="bottom" constant="9" id="7zs-6L-S1w"/>
                             <constraint firstItem="ToZ-9o-PAY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="9x7-4d-2Jc"/>
                             <constraint firstItem="hyE-Qp-l4k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="Ddn-WL-mgc"/>
                             <constraint firstItem="OtL-Lg-BcV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="Sc7-GU-a2S"/>
+                            <constraint firstItem="yUz-j0-gYp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tku-Zh-qfp"/>
                             <constraint firstItem="hyE-Qp-l4k" firstAttribute="leading" secondItem="rRe-lE-yAS" secondAttribute="trailing" constant="7.5" id="VLI-eX-W5y"/>
+                            <constraint firstItem="yUz-j0-gYp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X3h-dx-MaP"/>
                             <constraint firstItem="Eqh-Og-FL5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="aim-zh-ORi"/>
                             <constraint firstItem="ToZ-9o-PAY" firstAttribute="top" secondItem="hS0-ge-yRp" secondAttribute="bottom" constant="19" id="ffD-Pi-P8N"/>
                             <constraint firstItem="HxF-py-LX4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="hhc-8O-LZW"/>
                             <constraint firstItem="OtL-Lg-BcV" firstAttribute="top" secondItem="ToZ-9o-PAY" secondAttribute="bottom" constant="19" id="hlQ-kj-Btm"/>
                             <constraint firstItem="Eqh-Og-FL5" firstAttribute="top" secondItem="NAt-ow-qru" secondAttribute="bottom" constant="19" id="hzS-eL-JmX"/>
+                            <constraint firstAttribute="bottom" secondItem="yUz-j0-gYp" secondAttribute="bottom" id="moX-dY-q3W"/>
                             <constraint firstItem="NAt-ow-qru" firstAttribute="top" secondItem="OtL-Lg-BcV" secondAttribute="bottom" constant="19" id="nHC-FG-5Vd"/>
                             <constraint firstItem="HxF-py-LX4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qLK-uq-kpn"/>
                             <constraint firstItem="rRe-lE-yAS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="x2t-r7-prN"/>
@@ -121,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1937.68115942029" y="91.741071428571431"/>
+            <point key="canvasLocation" x="1801.449275362319" y="91.741071428571431"/>
         </scene>
         <!--Pa Pagogo View Controller-->
         <scene sceneID="a6q-hP-8ZH">
@@ -131,13 +138,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnB-lh-Ubf">
-                                <rect key="frame" x="186" y="263" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="생각이 떠오르면 바로 행동으로 옮겼다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I8y-H9-rvB">
                                 <rect key="frame" x="87" y="309" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -177,6 +177,47 @@
             </objects>
             <point key="canvasLocation" x="2699" y="92"/>
         </scene>
+        <!--Vision View Controller-->
+        <scene sceneID="xf9-N3-G63">
+            <objects>
+                <viewController id="aMu-MS-8ju" customClass="VisionViewController" customModule="_5Week_Class" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lQy-Ow-U8P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KakaoTalk_Photo_2021-10-27-10-35-27" translatesAutoresizingMaskIntoConstraints="NO" id="M2v-Qg-Df3">
+                                <rect key="frame" x="87" y="119" width="240" height="405"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D94-xD-TK9">
+                                <rect key="frame" x="106" y="663" width="202" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lv-h0-WUT">
+                                <rect key="frame" x="136" y="569" width="142" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="requestButtonClicked:" destination="aMu-MS-8ju" eventType="touchUpInside" id="PQN-TU-mPX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PsQ-f9-qH6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="postImageView" destination="M2v-Qg-Df3" id="5fd-xk-gqp"/>
+                        <outlet property="resultLabel" destination="D94-xD-TK9" id="Ipo-Fg-Sur"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sy8-Zc-Ofy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3407.2463768115945" y="113.16964285714285"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="AuX-vZ-XNJ">
             <objects>
@@ -197,7 +238,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="KakaoTalk_Photo_2021-10-27-10-35-27" width="720" height="1280"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <image name="배경" width="518" height="786"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

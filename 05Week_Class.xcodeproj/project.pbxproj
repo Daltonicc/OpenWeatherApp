@@ -15,13 +15,14 @@
 		6A1750732726444600827722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1750712726444600827722 /* LaunchScreen.storyboard */; };
 		6A17507C2726448200827722 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6A17507B2726448200827722 /* Alamofire */; };
 		6A17507F272644F000827722 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 6A17507E272644F000827722 /* SwiftyJSON */; };
-		6A851B212728D18B00D19537 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A851B202728D18B00D19537 /* Constant.swift */; };
 		6A851B232728D34000D19537 /* TranslatedAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A851B222728D34000D19537 /* TranslatedAPIManager.swift */; };
 		6A851B252728E9A100D19537 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A851B242728E9A100D19537 /* VisionViewController.swift */; };
 		6A851B272728EC7000D19537 /* VisionAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A851B262728EC7000D19537 /* VisionAPIManager.swift */; };
+		6A851B292729646800D19537 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A851B282729646800D19537 /* Constant.swift */; };
+		6A851B2B2729700A00D19537 /* OCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A851B2A2729700A00D19537 /* OCRViewController.swift */; };
+		6A851B2D2729714C00D19537 /* OCRAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A851B2C2729714C00D19537 /* OCRAPIManager.swift */; };
 		6AB37CE1272792C8001CB1C4 /* PaPagogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB37CE0272792C8001CB1C4 /* PaPagogoViewController.swift */; };
 		6AB37CEF2727FB2F001CB1C4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB37CEE2727FB2F001CB1C4 /* Kingfisher */; };
-		6AB37CF127280632001CB1C4 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB37CF027280632001CB1C4 /* Key.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +34,13 @@
 		6A17506F2726444600827722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A1750722726444600827722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A1750742726444600827722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A851B202728D18B00D19537 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		6A851B222728D34000D19537 /* TranslatedAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatedAPIManager.swift; sourceTree = "<group>"; };
 		6A851B242728E9A100D19537 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		6A851B262728EC7000D19537 /* VisionAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionAPIManager.swift; sourceTree = "<group>"; };
+		6A851B282729646800D19537 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		6A851B2A2729700A00D19537 /* OCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRViewController.swift; sourceTree = "<group>"; };
+		6A851B2C2729714C00D19537 /* OCRAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRAPIManager.swift; sourceTree = "<group>"; };
 		6AB37CE0272792C8001CB1C4 /* PaPagogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaPagogoViewController.swift; sourceTree = "<group>"; };
-		6AB37CF027280632001CB1C4 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +79,13 @@
 				6A1750662726444500827722 /* AppDelegate.swift */,
 				6A1750682726444500827722 /* SceneDelegate.swift */,
 				6A17506A2726444500827722 /* ViewController.swift */,
-				6A851B202728D18B00D19537 /* Constant.swift */,
-				6A851B262728EC7000D19537 /* VisionAPIManager.swift */,
 				6AB37CE0272792C8001CB1C4 /* PaPagogoViewController.swift */,
+				6A851B2C2729714C00D19537 /* OCRAPIManager.swift */,
+				6A851B2A2729700A00D19537 /* OCRViewController.swift */,
 				6A851B242728E9A100D19537 /* VisionViewController.swift */,
+				6A851B262728EC7000D19537 /* VisionAPIManager.swift */,
 				6A851B222728D34000D19537 /* TranslatedAPIManager.swift */,
-				6AB37CF027280632001CB1C4 /* Key.swift */,
+				6A851B282729646800D19537 /* Constant.swift */,
 				6A17506C2726444500827722 /* Main.storyboard */,
 				6A17506F2726444600827722 /* Assets.xcassets */,
 				6A1750712726444600827722 /* LaunchScreen.storyboard */,
@@ -173,14 +176,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A17506B2726444500827722 /* ViewController.swift in Sources */,
-				6AB37CF127280632001CB1C4 /* Key.swift in Sources */,
+				6A851B292729646800D19537 /* Constant.swift in Sources */,
+				6A851B2B2729700A00D19537 /* OCRViewController.swift in Sources */,
+				6A851B2D2729714C00D19537 /* OCRAPIManager.swift in Sources */,
 				6AB37CE1272792C8001CB1C4 /* PaPagogoViewController.swift in Sources */,
 				6A1750672726444500827722 /* AppDelegate.swift in Sources */,
 				6A851B252728E9A100D19537 /* VisionViewController.swift in Sources */,
 				6A851B272728EC7000D19537 /* VisionAPIManager.swift in Sources */,
 				6A1750692726444500827722 /* SceneDelegate.swift in Sources */,
 				6A851B232728D34000D19537 /* TranslatedAPIManager.swift in Sources */,
-				6A851B212728D18B00D19537 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

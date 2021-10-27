@@ -29,8 +29,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         labelSetting(label: currentTempLabel)
         labelSetting(label: windSpeedLabel)
         labelSetting(label: humidityLabel)
@@ -49,7 +47,7 @@ class ViewController: UIViewController {
     func getCurrentWeather() {
         
         //리퀘스트하고 유효성검사하고 JSON으로 응답한다!(요걸 SwiftyJSON 라이브러리가 도와줌)
-        AF.request(url, method: .get).validate().responseJSON { response in
+        AF.request(EndPoint.openweatherURL, method: .get).validate().responseJSON { response in
             switch response.result {
                 
                 //네트워크 통신 성공
